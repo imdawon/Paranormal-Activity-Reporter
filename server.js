@@ -7,6 +7,8 @@ var session = require("express-session");
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
 
+var app = express();
+
 // Set Handlebars.
 var exphbs = require("express-handlebars");
 
@@ -18,7 +20,6 @@ var PORT = process.env.PORT || 8080;
 var db = require("./models");
 
 // Creating express app and configuring middleware needed for authentication
-var app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
