@@ -8,10 +8,10 @@ var session = require("express-session");
 var passport = require("./config/passport");
 
 // Set Handlebars.
-var exphbs = require("express-handlebars");
+// var exphbs = require("express-handlebars");
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+// app.set("view engine", "handlebars");
 
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
