@@ -1,4 +1,6 @@
-{
+require('.env').config()
+
+module.exports = {
   "development": {
     "username": "root",
     "password": "toor",
