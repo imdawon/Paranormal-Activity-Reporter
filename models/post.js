@@ -1,5 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-  var Post = sequelize.define("Post", {
+  // eslint-disable-next-line quotes
+  var Posts = sequelize.define("Posts", {
     // The email cannot be null, and must be a proper email before creation
     title: {
       type: DataTypes.STRING,
@@ -10,6 +11,19 @@ module.exports = function(sequelize, DataTypes) {
     body: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    // The category cannot be null
+    category: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    // The Author cannot be null
+    author: {
+      tpye: DataTypes.string,
+      allowNull: false,
+      validate: {
+        isEmail: true
+      }
     }
   });
 };
