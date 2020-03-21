@@ -1,55 +1,51 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/logout">
+                Logout
+            </a>
+        </div>
+        <div class="navbar-end">
+            <a class="navbar-brand">Welcome &nbsp<span class="member-name"></span></a>
+        </div>
     </div>
-  </div>
 </nav>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <h2>Welcome <span class="member-name"></span></h2>
-    </div>
-  </div>
-</div>
-
 <section class="section">
-  <div class="container">
-    <h1 class="title header">
-      P.A.R.
-    </h1>
-    <img class="image" id="header-logo" src="/assets/logo_transparent.png" alt="logo">
-  </div>
+    <div class="container">
+        <h1 class="title header">
+            P.A.R.
+        </h1>
+        <img class="image" id="header-logo" src="/assets/logo_transparent.png" alt="logo">
+    </div>
 </section>
 <section class="hero is-medium is-dark is-bold">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Normal is an illusion.
-      </h1>
-      <br>
-      <h2 class="subtitle">
-        What is normal for the spider is chaos for the fly.
-      </h2>
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Normal is an illusion.
+            </h1>
+            <br>
+            <h2 class="subtitle">
+                What is normal for the spider is chaos for the fly.
+            </h2>
+        </div>
     </div>
-  </div>
 </section>
 <div class="columns">
-  <div class="column is-one-quarter cat-list">
-    <ul>Categories
-      <li>Aliens</li>
-      <li>Sasquatch</li>
-      <li>Abductions</li>
-      <li>Conspiracy</li>
-    </ul>
-  </div>
-  <div class="column is-three-quarter reports">
-    <h2>Report Paranormal Activity Here!</h2>
-    <form class="create-form">
+    <div class="column is-one-quarter cat-list">
+        <ul>Categories
+            <li>Aliens</li>
+            <li>Sasquatch</li>
+            <li>Abductions</li>
+            <li>Conspiracy</li>
+        </ul>
+    </div>
+    <div class="column is-three-quarter reports">
+        <h2>Report Paranormal Activity Here!</h2>
+        <form class="create-form">
       <div class="select">
-        <select id="select-category">
+        <select>
+          <option>Select Category</option>
           <option>General</option>
           <option>Sasquatch</option>
           <option>Chem Trails</option>
@@ -65,7 +61,6 @@
       <button class="button is-warning" id="submitBtn">Create Report!</button>
     </form>
     <p>Reports</p>
-
     {{#each posts}}
       <div class="card">
         <div class="card-content">
@@ -74,34 +69,34 @@
         </div>
       </div>
     {{/each}}
-    
   </div>
 </div>
-</div><br><br>
-<hr><br><br>
+</div>
+<br><br><hr><br><br>
 <!-- alien -->
 <div class="ufo">
-  <div class="monster" style="color: #7cb342">
-    <div class="body">
-      <div class="ear"></div>
-      <div class="ear"></div>
-      <div class="vampi-mouth">
-        <div class="vampi-tooth"></div>
-      </div>
+    <div class="monster" style="color: #7cb342">
+        <div class="body">
+            <div class="ear"></div>
+            <div class="ear"></div>
+            <div class="vampi-mouth">
+                <div class="vampi-tooth"></div>
+            </div>
+        </div>
+        <div class="eyes">
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+        </div>
     </div>
-    <div class="eyes">
-      <div class="eye">
-        <div class="pupil"></div>
-      </div>
+    <div class="ship">
+        <div class="glass"></div>
+        <div class="base">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-  </div>
-  <div class="ship">
-    <div class="glass"></div>
-    <div class="base">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
 </div>
+<br><br><br>

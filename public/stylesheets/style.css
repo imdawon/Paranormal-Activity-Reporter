@@ -8,8 +8,17 @@ form.login {
 }
 
 .header {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-left: 15px;
+}
+
+.navbar {
+  background-color: #708ae8;
+  color: white;
+}
+
+a {
+  color: white;
 }
 
 h1, h2, p, li, ul {
@@ -24,7 +33,7 @@ li {
 }
 
 li:hover {
-  background-color: cornflowerblue;
+  background-color: #708ae8;
 } 
 .cat-list {
   margin-left: 10px;
@@ -37,6 +46,7 @@ li:hover {
 .reports {
   margin-left: -10px;
 }
+
 img {
   display: block;
   margin-left: auto;
@@ -72,6 +82,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-bottom: 40px;
 }
 
 .glass {
