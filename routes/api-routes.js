@@ -53,6 +53,10 @@ module.exports = function(app) {
 
   // Route for getting some data about a post to be used client side
   app.get('/api/post_data', (req, res) => {
-    res.json({});
+    res.json(db.Posts.findAll().then(result => {
+      console.log('This is what we found...' + result)
+    }));
   }
+
+
 };
