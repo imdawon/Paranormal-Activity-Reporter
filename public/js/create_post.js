@@ -9,7 +9,8 @@
 
 //     let postCategory = $('#select-category');
 
-//     let postTitle = $('#post-title')
+//     let postTitle = $('#post-title');
+
 
 
 // });

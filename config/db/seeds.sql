@@ -1,1 +1,3 @@
-INSERT INTO categories (name) VALUES ('General', 'UFOs', 'Sasquatch', 'Chem Trails', 'Abductions', 'Flat Earth', 'Hauntings', 'Lizard People');
+INSERT INTO Categories (name) VALUES ('General', 'UFOs', 'Sasquatch', 'Chem Trails', 'Abductions', 'Flat Earth', 'Hauntings', 'Lizard People');
+INSERT INTO Posts (title, body, category, author) VALUES ('Aliens Ate The Candy!', 'Pretty sure aliens abducted all the Peanut M&M\'s from the vending machine!', 'Abductions', 'dawson@email.com');
+INSERT INTO User (email, password) VALUES ('user@email.com', 'password1');
