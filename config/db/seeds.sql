@@ -1,0 +1,1 @@
+INSERT INTO categories (name) VALUES ('General', 'UFOs', 'Sasquatch', 'Chem Trails', 'Abductions', 'Flat Earth', 'Hauntings', 'Lizard People');
