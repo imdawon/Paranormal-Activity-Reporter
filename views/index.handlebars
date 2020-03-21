@@ -65,27 +65,14 @@
       <button class="button is-warning" id="submitBtn">Create Report!</button>
     </form>
     <p>Reports</p>
-    <div class="card">
-      <div class="card-content">
-        <p class="title">
-          “Up yonder on Stevens Pass, under a great Pine Tree, a giant beast stood gazing at me. I believe
-          it was Sasquatch.”
-        </p>
-        <p class="subtitle">
-          Bobby
-        </p>
+    {{#each Posts}}
+      <div class="card">
+        <div class="card-content">
+          <p class="title">{{this.title}}</p>
+          <p class="subtitle">{{this.author}}</p>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <p class="title">
-          "Pretty sure aliens abducted all the Peanut M&M's from the vending machine!"
-        </p>
-        <p class="subtitle">
-          Dawson
-        </p>
-      </div>
-    </div>
+    {{/each}}
   </div>
 </div>
 </div><br><br>
