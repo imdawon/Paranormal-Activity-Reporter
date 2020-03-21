@@ -46,8 +46,8 @@
     </ul>
   </div>
   <h2>Report Paranormal Activity Here!</h2>
-  <form class="create-form">
-    <div class="select">
+  <form class="create-form" id='post-form'>
+    <div class="select" id='select-category'>
       <select>
         <option>Select Category</option>
         <option>General</option>
@@ -60,8 +60,8 @@
         <option>Lizard People</option>
       </select>
     </div>
-    <input class="input" type="text" id="titleText" placeholder="Title">
-    <textarea class="textarea" id="inputText" placeholder="e.g. Why to never run out of tin foil..."></textarea>
+    <input class="input" type="text" id="post-title" placeholder="Title">
+    <textarea class="textarea" id="post-body" placeholder="e.g. Why to never run out of tin foil..."></textarea>
     <button class="button is-warning" id="submitBtn">Create Report!</button>
   </form>
   <div class="column is-half reports">
