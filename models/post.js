@@ -19,11 +19,12 @@ module.exports = function(sequelize, DataTypes) {
     },
     // The Author cannot be null
     author: {
-      tpye: DataTypes.string,
+      type: DataTypes.string,
       allowNull: false,
       validate: {
         isEmail: true
       }
     }
   });
+  return Posts;
 };
