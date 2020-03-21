@@ -65,14 +65,16 @@
       <button class="button is-warning" id="submitBtn">Create Report!</button>
     </form>
     <p>Reports</p>
-    {{#each Posts}}
+
+    {{#each posts}}
       <div class="card">
         <div class="card-content">
-          <p class="title">{{this.title}}</p>
-          <p class="subtitle">{{this.author}}</p>
+          <p class="title">{{dataValues.title}}</p>
+          <p class="subtitle">{{dataValues.author}}</p>
         </div>
       </div>
     {{/each}}
+    
   </div>
 </div>
 </div><br><br>
