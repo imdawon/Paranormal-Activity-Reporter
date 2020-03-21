@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    let postForm = $('#post-form');
+    let postForm = $('.create-form');
       // This file just does a GET request to figure out which user is logged in
     // and updates the HTML on the page
     let userEmail = $.get("/api/user_data").then(function (data) {
@@ -8,8 +8,8 @@ $(document).ready(function () {
     });
 
     let postCategory = $('#select-category');
-    let postTitle = $('#post-title');
-    let postBody = $('#post-body');
+    let postTitle = $('#titleText');
+    let postBody = $('#inputText');
 
     postForm.on('submit', function(event) {
         event.preventDefault();
