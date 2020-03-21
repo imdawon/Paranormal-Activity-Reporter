@@ -1,9 +1,23 @@
 $(document).ready(function () {
+<<<<<<< HEAD
     let postCategory = $('#select-category');
     let postTitle = $('#titleText');
     let postBody = $('#inputText');
     let postForm = $('.create-form');
 
+=======
+
+    let postForm = $('.create-form');
+      // This file just does a GET request to figure out which user is logged in
+    // and updates the HTML on the page
+    let userEmail = $.get("/api/user_data").then(function (data) {
+        console.log(userEmail);
+    });
+
+    let postCategory = $('#select-category');
+    let postTitle = $('#titleText');
+    let postBody = $('#inputText');
+>>>>>>> befd8a7d35403bf06d5aece485361d196115d32b
 
     postForm.on('submit', function (event) {
         event.preventDefault();
