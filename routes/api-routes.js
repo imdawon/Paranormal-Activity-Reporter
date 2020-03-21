@@ -50,4 +50,23 @@ module.exports = function(app) {
       });
     }
   });
+
+  // Route for getting some data about a post to be used client side
+  app.get('/api/post_data', (req, res) => {
+    db.Posts.findAll().then(result => {
+      res.json(result);
+    });
+  });
+
+  // Route for posting a post
+  app.post('/api/post', (req, res) => {
+    db.Posts.create({
+      author: req.body.author,
+      title: req.body.title,
+      category: req.body.category,
+      body: req.body.body
+    }).then(data => {
+      console.log(`New post has been created with the information ${data}`);
+    });
+  });
 };
