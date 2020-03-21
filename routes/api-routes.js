@@ -53,9 +53,9 @@ module.exports = function(app) {
 
   // Route for getting some data about a post to be used client side
   app.get('/api/post_data', (req, res) => {
-    res.json(db.Posts.findAll().then(result => {
-      console.log('This is what we found...' + result);
-    }));
+    db.Posts.findAll().then(result => {
+      res.json(result);
+    });
   });
 
   // Route for posting a post
