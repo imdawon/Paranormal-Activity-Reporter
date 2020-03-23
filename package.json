@@ -1,5 +1,5 @@
 {
-  "name": "1-Passport-Example",
+  "name": "concernedandafraid",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -15,7 +15,9 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "2.4.3",
+    "dotenv": "^8.2.0",
     "express": "^4.17.0",
+    "express-handlebars": "^3.1.0",
     "express-session": "^1.16.1",
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
@@ -28,7 +30,7 @@
     "cross-env": "^5.2.0",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-prettier": "^2.7.0",
     "mocha": "^5.2.0",
     "prettier": "^1.13.7"
   }
