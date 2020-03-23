@@ -3,8 +3,17 @@ form.login {
   margin-top: 50px;
 }
 
-.logo {
-  width: 500px;
+.section {
+  padding: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.column-top {
+  flex: 33.33%;
+  padding: 5px;
 }
 
 .header {
@@ -12,12 +21,19 @@ form.login {
   margin-left: 15px;
 }
 
+.title.header {
+  margin-top: 30px;
+}
 .navbar {
   background-color: #708ae8;
   color: white;
 }
 
 a {
+  color: #708ae8
+}
+
+a.navbar-brand {
   color: white;
 }
 
@@ -70,11 +86,32 @@ img {
   margin-top: 20px;
 }
 
+div.select.card {
+  margin-top: 31px;
+  margin-bottom: 18px;
+}
+
+#titleText{
+  margin-bottom: 18px;
+}
+
+#inputText {
+  margin-bottom: 17px;
+}
+
+form.create-form {
+  margin-right: 10px;
+}
+
+.post {
+  margin: 10px 10px 0px 0px;
+}
 /*alien not my code!!! but he is cool!*/
 
 .ufo {
   font-size: 25vmin;
   position:relative;
+  padding: 80px;
 }
 
 .ship {
