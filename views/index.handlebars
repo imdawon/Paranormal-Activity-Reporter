@@ -15,7 +15,17 @@
         <h1 class="title header">
             P.A.R.
         </h1>
-        <img class="image" id="header-logo" src="/assets/logo_transparent.png" alt="logo">
+        <div class="row">
+            <div class="column-top">
+                <img class="image" id="header-sides" src="/assets/noProbePlease.png" alt="abduct">
+            </div>
+            <div class="column-top">
+                <img class="image" id="header-logo" src="/assets/logo_transparent.png" alt="logo">
+            </div>
+            <div class="column-top">
+                <img class="image" id="header-sides" src="/assets/noProbePleaseInvert.png" alt="abduct">
+            </div>
+        </div>
     </div>
 </section>
 <section class="hero is-medium is-dark is-bold">
@@ -43,7 +53,7 @@
     <div class="column is-three-quarter reports">
         <h2>Report Paranormal Activity Here!</h2>
         <form class="create-form">
-      <div class="select">
+      <div class="select card">
         <select id="post-category">
           <option>Select Category</option>
           <option>General</option>
@@ -56,13 +66,13 @@
           <option>Lizard People</option>
         </select>
       </div>
-      <input class="input" type="text" id="titleText" placeholder="Title">
-      <textarea class="textarea" id="inputText" placeholder="e.g. Why to never run out of tin foil..."></textarea>
-      <button class="button is-warning" id="submitBtn">Create Report!</button>
+      <input class="input card" type="text" id="titleText" placeholder="Title">
+      <textarea class="textarea card" id="inputText" placeholder="e.g. Why to never run out of tin foil..."></textarea>
+      <button class="button is-warning card" id="submitBtn">Create Report!</button>
     </form>
     <p>Reports</p>
     {{#each posts}}
-      <div class="card">
+      <div class="card post">
         <div class="card-content">
           <p class="title">{{dataValues.title}}</p>
           <p class="subtitle">{{dataValues.author}}</p>
