@@ -24,13 +24,20 @@ module.exports = function(app) {
 
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
-  app.get("/members/:filterValue", isAuthenticated, function(req, res) {
+  app.get("/members", isAuthenticated, function(req, res) {
     db.Posts.findAll().then(result => {
       let filterValue = 'General';
+      let reversedList = result.reverse();
+      let filteredList = reversedList.filter(item => item.category === filterValue);
+      res.render(path.join(__dirname, "../views/index.handlebars"), {posts: filteredList});
+    });
+  });
+
+  app.get("/members/:filterValue", isAuthenticated, function(req, res) {
+    db.Posts.findAll().then(result => {
       if (req.params.filterValue !== undefined) {
         filterValue = req.params.filterValue
-      }  
-      let filterValue = 'General';
+      }
       let reversedList = result.reverse();
       let filteredList = reversedList.filter(item => item.category === filterValue);
       res.render(path.join(__dirname, "../views/index.handlebars"), {posts: filteredList});
