@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     // The password cannot be null
     body: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     // The category cannot be null

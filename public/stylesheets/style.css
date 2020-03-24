@@ -4,7 +4,7 @@ form.login {
 }
 
 .section {
-  padding: 0;
+  padding: 20px;
 }
 
 .row {
@@ -37,20 +37,31 @@ a.navbar-brand {
   color: white;
 }
 
-h1, h2, p, li, ul {
+h1, h2, p {
   text-align: center;
   font-size: 40px;
 }
 
-li {
+/* li {
   /* border: gray 1px solid; */
-  margin-top: 20px;
+  /* margin-top: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */ 
+
+/* li:hover {
+  background-color: #708ae8;
+}  */
+
+.breadcrumb {
+  background-color: white;
+  display: block;
 }
 
-li:hover {
-  background-color: #708ae8;
-} 
+a.categoryBtn{
+  /* background-color: #708ae8; */
+  color:#708ae8;
+  width: 100%;
+}
 .cat-list {
   margin-left: 10px;
 }
@@ -71,6 +82,10 @@ img {
 
 .card-content{
   margin-top: 10px;
+}
+
+.card {
+  border: 1px solid rgba(0,0,0,.3);
 }
 
 #header-logo {
@@ -100,11 +115,23 @@ div.select.card {
 }
 
 form.create-form {
-  margin-right: 10px;
+  margin: 20px 20%;
+  border: 1px solid rgba(0,0,0,.3);
+  padding: 2%;
+}
+
+#submitBtn {
+  background-color: #708ae8;
+  color: white;
 }
 
 .post {
-  margin: 10px 10px 0px 0px;
+  margin: 10px 20% 0px 20%;
+}
+
+.lower-area {
+  background-color: #708ae8;
+  padding: 30px 0 100px 0;
 }
 /*alien not my code!!! but he is cool!*/
 
@@ -137,7 +164,7 @@ form.create-form {
   height:0.3em;
   border-radius:200px;
   margin:auto;
-  background:#2196f3;
+  background:#5c5e5f;
   padding-left: 20px;
   padding-right: 20px;
   border-top:3px solid rgba(255, 255, 255, 0.17);
