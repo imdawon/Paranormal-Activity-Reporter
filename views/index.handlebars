@@ -41,10 +41,10 @@
 <div class="columns">
     <div class="column is-one-quarter cat-list">
         <ul>Categories
-            <li class="categoryBtn">Aliens</li>
-            <li class="categoryBtn">Sasquatch</li>
-            <li class="categoryBtn">Abductions</li>
-            <li class="categoryBtn">Conspiracy</li>
+            <li>Aliens</li>
+            <li>Sasquatch</li>
+            <li>Abductions</li>
+            <li>Conspiracy</li>
         </ul>
         <!-- © wdisseny -->
         <div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;">
@@ -86,30 +86,6 @@
                 <p class="subtitle">Posted in: <strong>{{dataValues.category}}</strong> by
                     <strong>{{dataValues.author}}</strong></p>
             </div>
-      <div class="select card">
-        <select id="post-category">
-          <option>Select Category</option>
-          <option>General</option>
-          <option>Sasquatch</option>
-          <option>Chem Trails</option>
-          <option>Abductions</option>
-          <option>UFO's</option>
-          <option>Flat Earth</option>
-          <option>Hauntings</option>
-          <option>Lizard People</option>
-        </select>
-      </div>
-      <input class="input card" type="text" id="titleText" placeholder="Title">
-      <textarea class="textarea card" id="inputText" maxlength="255" placeholder="e.g. Why to never run out of tin foil..."></textarea>
-      <button class="button is-warning card" id="submitBtn">Create Report!</button>
-    </form>
-    <p>Reports</p>
-    {{#each posts}}
-      <div class="card post" id={{dataValues.category}}>
-        <div class="card-content">
-          <p class="title">{{dataValues.title}}</p>
-          <p class="subtitle">{{dataValues.body}}</p>
-          <p class="subtitle">Posted in: <strong>{{dataValues.category}}</strong> by <strong>{{dataValues.author}}</strong></p>
         </div>
         {{/each}}
     </div>
