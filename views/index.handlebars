@@ -41,10 +41,10 @@
 <div class="columns">
     <div class="column is-one-quarter cat-list">
         <ul>Categories
-            <li>Aliens</li>
-            <li>Sasquatch</li>
-            <li>Abductions</li>
-            <li>Conspiracy</li>
+            <li class="categoryBtn">Aliens</li>
+            <li class="categoryBtn">Sasquatch</li>
+            <li class="categoryBtn">Abductions</li>
+            <li class="categoryBtn">Conspiracy</li>
         </ul>
     </div>
     <div class="column is-three-quarter reports">
@@ -69,7 +69,7 @@
     </form>
     <p>Reports</p>
     {{#each posts}}
-      <div class="card post">
+      <div class="card post" id={{dataValues.category}}>
         <div class="card-content">
           <p class="title">{{dataValues.title}}</p>
           <p class="subtitle">{{dataValues.body}}</p>
