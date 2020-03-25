@@ -41,10 +41,11 @@
 
 <nav class="breadcrumb has-bullet-separator is-centered" aria-label="breadcrumbs">
   <ul>
+      {{!-- need correct href links inserted here --}}
     <li><a class="categoryBtn" href="#"><strong>P.A.R.</strong></a></li>
-    <li><a class="categoryBtn" href="#">General</a></li>
-    <li><a class="categoryBtn" href="#">Sasquatch</a></li>
-    <li><a class="categoryBtn" href="#">Chem Trails</a></li>
+    <li><a class="categoryBtn" href="/members/Genreal">General</a></li>
+    <li><a class="categoryBtn" href="/members/Sasquatch">Sasquatch</a></li>
+    <li><a class="categoryBtn" href="">Chem Trails</a></li>
     <li><a class="categoryBtn" href="#">Abductions</a></li>
     <li><a class="categoryBtn" href="#">UFO's</a></li>
     <li><a class="categoryBtn" href="#">Flat Earth</a></li>
@@ -52,43 +53,53 @@
     <li><a class="categoryBtn" href="#">Lizard People</a></li>
   </ul>
 </nav>
-
+<!-- © wdisseny -->
+        <div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;">
+            <div style="font-weight:bold">"The Moon" today</div>
+            <div style=""></div>
+            <div>.</div>
+            <div style="font-size:small"></div>
+        </div>
+        <script
+            type="text/javascript">(function () { var d = new Date().getDate(); var m = document.querySelectorAll("#contain_moon div"); var a = new XMLHttpRequest(); var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=100&lightColor=rgb(255,255,255)&shadeColor=rgb(17,17,17)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + ""; m[1].style.height = "100px"; a.onreadystatechange = function () { if (a.readyState == 4 && a.status == 200) { var b = JSON.parse(a.responseText); m[1].innerHTML = b.phase[d].svg; if (typeof moon_widget_loaded == "function") moon_widget_loaded(b); m[2].innerHTML = b.phase[d].npWidget } }; a.open("GET", url, true); a.send() })()</script>
+    </div>
     <div class="column is-full">
         <h2>Report Paranormal Activity Here!</h2>
         <form class="create-form">
-      <div class="select card">
-        <select id="post-category">
-          <option>Select Category</option>
-          <option>General</option>
-          <option>Sasquatch</option>
-          <option>Chem Trails</option>
-          <option>Abductions</option>
-          <option>UFO's</option>
-          <option>Flat Earth</option>
-          <option>Hauntings</option>
-          <option>Lizard People</option>
-        </select>
-      </div>
-      <input class="input card" type="text" id="titleText" placeholder="Title">
-      <textarea class="textarea card" id="inputText" placeholder="e.g. Why to never run out of tin foil..."></textarea>
-      <button class="button is-warning card" id="submitBtn">Create Report!</button>
-    </form>
-    <p>Reports</p>
-    {{#each posts}}
-      <div class="card post">
-        <div class="card-content">
-          <p class="title">{{dataValues.title}}</p>
-          <p class="subtitle">{{dataValues.body}}</p>
-          <p class="subtitle">{{dataValues.author}}</p>
+            <div class="select card">
+                <select id="post-category">
+                    <option>General</option>
+                    <option>Sasquatch</option>
+                    <option>Chem Trails</option>
+                    <option>Abductions</option>
+                    <option>UFO's</option>
+                    <option>Flat Earth</option>
+                    <option>Hauntings</option>
+                    <option>Lizard People</option>
+                </select>
+            </div>
+            <input class="input card" type="text" id="titleText" placeholder="Title">
+            <textarea class="textarea card" id="inputText" maxlength="255"
+                placeholder="e.g. Why to never run out of tin foil..."></textarea>
+            <button class="button is-warning card" id="submitBtn">Create Report!</button>
+        </form>
+        <p>Reports</p>
+        {{#each posts}}
+        <div class="card post">
+            <div class="card-content">
+                <p class="title">{{dataValues.title}}</p>
+                <p class="subtitle">{{dataValues.body}}</p>
+                <p class="subtitle">Posted in: <strong>{{dataValues.category}}</strong> by
+                    <strong>{{dataValues.author}}</strong></p>
+            </div>
         </div>
-      </div>
-    {{/each}}
-  </div>
+        {{/each}}
+    </div>
 </div>
 </div>
 <br><br><hr><br><br>
 <div class="lower-area">
-<!-- alien -->
+<!-- @eduardosada -->
 <div class="ufo">
     <div class="monster" style="color: #7cb342">
         <div class="body">
