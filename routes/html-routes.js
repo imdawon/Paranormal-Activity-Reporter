@@ -37,7 +37,7 @@ module.exports = function(app) {
 
   app.get("/members", isAuthenticated, function(req, res) {
     db.Posts.findAll().then(result => {
-      res.render(path.join(__dirname, "../views/index.handlebars"), {posts: result});
+      res.render(path.join(__dirname, "../views/index.handlebars"), {posts: result.reverse()});
     });
   });
 
