@@ -1,14 +1,13 @@
 # Paranormal-Activity-Reporter
 Post and view paranormal stories from like-minded people!
 
-
 ![Paranormal-Activity-Reporter-Members](https://i.imgur.com/UIHyfJi.png)
 
 ## Features
 
-* Geolocation lookup using Geocode API
-* Top track lookup by country
-* JS library for ISO 3166 country codes
+* View and post conspiracy-fueled content in 8 different categories
+* Check out the current phase of "The Moon" when visiting the members page
+* User sign-up and sign-in authentication
 
 ## Live Site
 * Visit https://intense-beach-33729.herokuapp.com
