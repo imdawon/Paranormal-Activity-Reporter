@@ -21,6 +21,7 @@ Post and view paranormal stories from like-minded people!
 
 * Bulma CSS Framework
 * Express
+* bcrypt
 * Handlebars
 * Bootstrap 4
 * dotenv
