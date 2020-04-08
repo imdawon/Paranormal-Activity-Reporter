@@ -20,6 +20,12 @@ Post and view paranormal stories from like-minded people!
 ## API's and Technologies Used:
 
 * Bulma CSS Framework
+* Express
+* bcrypt
 * Handlebars
-* iCalendar37 Moon Phase 
 * Bootstrap 4
+* dotenv
+* Sequelize
+* jQuery
+* MySQL
+* iCalendar37 Moon Phase 
