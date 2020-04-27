@@ -4,7 +4,7 @@ module.exports = {
   development: {
     username: "root",
     port: "3306",
-    password: "theLostWorld",
+    password: "toor",
     database: "par_db",
     host: "localhost",
     dialect: "mysql"

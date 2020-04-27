@@ -21,7 +21,6 @@ $(document).ready(function () {
             category: postCategory.val(),
             body: postBody.val().trim()
         };
-        console.log(`User data obj: ${JSON.stringify(userData)}`);
 
     // If we have an email and password we run the loginUser function and clear the form
         createPost(userData.author, userData.title, userData.category, userData.body);
@@ -45,6 +44,7 @@ $(document).ready(function () {
             }
         }
     });
+
    
 
 
